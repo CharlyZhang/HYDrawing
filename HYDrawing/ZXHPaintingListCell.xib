@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaintingListCell" id="KGk-i7-Jjw" customClass="ZXHPaintingListCell">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hRc-Zm-yO3" userLabel="缩略图">
+                        <rect key="frame" x="52" y="12" width="140" height="105"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="LZl-wv-OrD"/>
+                            <constraint firstAttribute="height" constant="105" id="YPw-a5-LiB"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOk-RI-F5e">
+                        <rect key="frame" x="2" y="12" width="36" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="JlB-Mp-gJd"/>
+                            <constraint firstAttribute="width" constant="36" id="cFm-0m-rfP"/>
+                        </constraints>
+                        <state key="normal" image="list_cell_btn_delete">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3W-m0-O67">
+                        <rect key="frame" x="52" y="77" width="140" height="38"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="rPY-Md-xKd"/>
+                            <constraint firstAttribute="width" constant="140" id="sJC-aP-zgC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.59217171717171713" green="0.59217171717171713" blue="0.59217171717171713" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgx-4l-Zge">
+                        <rect key="frame" x="2" y="77" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="2pQ-82-kb2"/>
+                            <constraint firstAttribute="width" constant="36" id="g5Y-fU-GPz"/>
+                        </constraints>
+                        <state key="normal" image="list_cell_btn_rename">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IOk-RI-F5e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="7XY-b0-sG0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="E3W-m0-O67" secondAttribute="bottom" constant="6" id="F1y-ae-avp"/>
+                    <constraint firstItem="hRc-Zm-yO3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="FkR-NJ-14s"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hRc-Zm-yO3" secondAttribute="bottom" constant="4" id="OJt-gP-DNA"/>
+                    <constraint firstItem="lgx-4l-Zge" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-6" id="SZ6-jU-Qb9"/>
+                    <constraint firstItem="IOk-RI-F5e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-6" id="ZhJ-Oh-i78"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lgx-4l-Zge" secondAttribute="bottom" constant="8" id="a4h-ce-46A"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="E3W-m0-O67" secondAttribute="trailing" constant="10" id="bAp-aK-SEg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hRc-Zm-yO3" secondAttribute="trailing" constant="10" id="rhr-aM-c1b"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="OJt-gP-DNA"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDelete" destination="IOk-RI-F5e" id="0ys-gZ-dDx"/>
+                <outlet property="btnRename" destination="lgx-4l-Zge" id="Fbi-Wf-Jsd"/>
+                <outlet property="imgView" destination="hRc-Zm-yO3" id="9Kc-Zy-JLs"/>
+                <outlet property="imgViewRightCons" destination="rhr-aM-c1b" id="Aai-hp-bzG"/>
+                <outlet property="nameLabel" destination="E3W-m0-O67" id="KzS-0U-dkH"/>
+                <outlet property="nameLabelRightCons" destination="bAp-aK-SEg" id="yHv-RI-2c9"/>
+            </connections>
+            <point key="canvasLocation" x="395" y="189"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list_cell_btn_delete" width="20" height="20"/>
+        <image name="list_cell_btn_rename" width="17" height="20"/>
+    </resources>
+</document>

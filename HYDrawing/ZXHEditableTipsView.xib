@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZXHEditableTipsView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4b-A7-xm2">
+                    <rect key="frame" x="225" y="278" width="150" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editable_locked" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-I0-sJy">
+                            <rect key="frame" x="80" y="0.0" width="70" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="8Bq-Zh-cCa"/>
+                                <constraint firstAttribute="width" constant="70" id="Yra-Fe-YSq"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editable_invisible" translatesAutoresizingMaskIntoConstraints="NO" id="xrT-Yy-LPc">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="Iiw-hX-G9F"/>
+                                <constraint firstAttribute="height" constant="45" id="JJ0-6h-SPr"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="FGP-3h-EHR"/>
+                        <constraint firstItem="xrT-Yy-LPc" firstAttribute="leading" secondItem="S4b-A7-xm2" secondAttribute="leading" id="GIm-hA-fqj"/>
+                        <constraint firstAttribute="trailing" secondItem="rhd-I0-sJy" secondAttribute="trailing" id="OxX-Qt-Ts0"/>
+                        <constraint firstAttribute="width" constant="150" id="YqW-z1-fdE"/>
+                        <constraint firstItem="xrT-Yy-LPc" firstAttribute="top" secondItem="S4b-A7-xm2" secondAttribute="top" id="ciZ-aG-Ogl"/>
+                        <constraint firstItem="rhd-I0-sJy" firstAttribute="top" secondItem="S4b-A7-xm2" secondAttribute="top" id="g9Z-X3-Vqv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="S4b-A7-xm2" secondAttribute="centerY" id="Ucy-9N-5nu"/>
+                <constraint firstAttribute="centerX" secondItem="S4b-A7-xm2" secondAttribute="centerX" id="zDN-bb-a6f"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="lockedView" destination="rhd-I0-sJy" id="EF8-Y3-OsA"/>
+                <outlet property="superViewWidthCons" destination="YqW-z1-fdE" id="LvZ-DM-m2D"/>
+                <outlet property="visibleView" destination="xrT-Yy-LPc" id="Dhs-zH-5KT"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editable_invisible" width="215" height="165"/>
+        <image name="editable_locked" width="215" height="165"/>
+    </resources>
+</document>

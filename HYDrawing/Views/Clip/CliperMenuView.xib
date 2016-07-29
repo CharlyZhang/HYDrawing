@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CliperMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-HS-BEJ">
+                    <rect key="frame" x="150" y="0.0" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6g2-sL-52z"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.010460625059999999" green="1" blue="0.050114338899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnOkClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="8PH-8W-c07"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ium-5K-XMm">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="AnF-zE-Rzg"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="1" green="0.29926531449999999" blue="0.32695033039999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="QGA-pY-IKv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6tU-HS-BEJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dhp-6S-7iS"/>
+                <constraint firstItem="ium-5K-XMm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FVe-Qq-uyd"/>
+                <constraint firstAttribute="bottom" secondItem="6tU-HS-BEJ" secondAttribute="bottom" id="LLi-ac-k5j"/>
+                <constraint firstAttribute="bottom" secondItem="ium-5K-XMm" secondAttribute="bottom" id="WT3-vV-TPW"/>
+                <constraint firstAttribute="trailing" secondItem="6tU-HS-BEJ" secondAttribute="trailing" id="Zy9-ke-ZZI"/>
+                <constraint firstItem="ium-5K-XMm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nC8-rQ-S5s"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCancel" destination="ium-5K-XMm" id="ZIb-av-FXD"/>
+                <outlet property="btnOk" destination="6tU-HS-BEJ" id="6Wm-LS-nXK"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3B6792EE4CC1F686E72E19A3631F3CDB5F45574D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3B6792EE4CC1F686E72E19A3631F3CDB5F45574D" : 0,
+    "E2E8E968B3DF85437364A214485EE61007C91FFA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "737E13E4-7F35-42CB-A39D-FFB113644EB4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3B6792EE4CC1F686E72E19A3631F3CDB5F45574D" : "HYDrawing\/",
+    "E2E8E968B3DF85437364A214485EE61007C91FFA" : "HYDrawing\/submodules\/BrushCore\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HYDrawing",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HYDrawing.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CharlyZhang\/HYDrawing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3B6792EE4CC1F686E72E19A3631F3CDB5F45574D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CharlyZhang\/BrushCore.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2E8E968B3DF85437364A214485EE61007C91FFA"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[submodule "submodules/BrushCore"]
+	path = submodules/BrushCore
+	url = https://github.com/CharlyZhang/BrushCore.git
